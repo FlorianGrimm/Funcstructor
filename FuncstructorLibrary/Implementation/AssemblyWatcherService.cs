@@ -127,6 +127,7 @@ namespace Brimborium.Funcstructors
 
             if (!found) { return; }
 
+            // look for FuncstructorConfigurationAttribute
             {
                 var attrs = assembly.GetCustomAttributes<FuncstructorConfigurationAttribute>();
                 foreach (var attr in attrs)
@@ -138,6 +139,7 @@ namespace Brimborium.Funcstructors
                 }
             }
 
+            // look for FuncstructorFactoryAttribute
             {
                 var attrs = assembly.GetCustomAttributes<FuncstructorFactoryAttribute>();
                 foreach (var attr in attrs)
@@ -153,6 +155,18 @@ namespace Brimborium.Funcstructors
                             this._FuncstructorConfigurations.Add(new MethodFuncstructorConfiguration(method, methodAttr.Key));
                         }
                     }
+                }
+            }
+
+            // look for AssemblyInjectionAttribute
+            {
+                var attrs = assembly.GetCustomAttributes<AssemblyInjectionAttribute>();
+                foreach (var attr in attrs)
+                {
+                    EmbeddedResourceAssemblyLoader.Activate().RegisterAssembly(
+                        attr.EmbeddedResource,
+                        attr.AssemblyName,
+                        assembly);
                 }
             }
         }
