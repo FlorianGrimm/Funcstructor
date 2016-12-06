@@ -2,13 +2,11 @@
 // MIT License
 // Copyright (c) 2016 Florian Grimm
 
-namespace Brimborium.Funcstructors
-{
+namespace Brimborium.Funcstructors {
     /// <summary>
     /// Provides factories.
     /// </summary>
-    public interface IFuncstructor
-    {
+    public interface IFuncstructor {
         /// <summary>
         /// Create a instance.
         /// </summary>

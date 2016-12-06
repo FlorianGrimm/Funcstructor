@@ -1,0 +1,27 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <MSBuildAllProjects>$(MSBuildAllProjects);$(MSBuildThisFileFullPath)</MSBuildAllProjects>
+    <HasSharedItems>true</HasSharedItems>
+    <SharedGUID>21b0f7f0-15b2-4ec7-b6e4-66b0c04a961c</SharedGUID>
+  </PropertyGroup>
+  <PropertyGroup Label="Configuration">
+    <Import_RootNamespace>FuncstructorLibrary.Shared</Import_RootNamespace>
+  </PropertyGroup>
+  <ItemGroup>
+    <Compile Include="$(MSBuildThisFileDirectory)Contracts\AssemblyInjectionAttribute.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Contracts\FuncstructorConfigurationAttribute.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Contracts\FuncstructorConstant.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Contracts\FuncstructorFactoryAttribute.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Contracts\FuncstructorRegisterAttribute.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Contracts\IAssemblyWatcherService.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Contracts\IFuncstructor.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Contracts\IFuncstructorConfigurable.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Contracts\IFuncstructorConfiguration.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Implementation\AssemblyWatcherService.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Implementation\CacheKey.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Implementation\EmbeddedResourceAssemblyLoader.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Implementation\Funcstructor.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Implementation\NullReplacement.cs" />
+  </ItemGroup>
+</Project>

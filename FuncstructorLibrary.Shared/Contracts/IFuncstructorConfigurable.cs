@@ -2,15 +2,13 @@
 // MIT License
 // Copyright (c) 2016 Florian Grimm
 
-namespace Brimborium.Funcstructors
-{
+namespace Brimborium.Funcstructors {
     using System;
 
     /// <summary>
     /// Provides configuration for IFuncstructor.
     /// </summary>
-    public interface IFuncstructorConfigurable : IFuncstructor
-    {
+    public interface IFuncstructorConfigurable : IFuncstructor {
         /// <summary>
         /// Gets the parent named <paramref name="name"/>
         /// </summary>

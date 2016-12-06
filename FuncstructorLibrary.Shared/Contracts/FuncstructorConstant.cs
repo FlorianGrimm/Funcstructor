@@ -2,13 +2,11 @@
 // MIT License
 // Copyright (c) 2016 Florian Grimm
 
-namespace Brimborium.Funcstructors
-{
+namespace Brimborium.Funcstructors {
     /// <summary>
     /// Contains consts.
     /// </summary>
-    public static class FuncstructorConstant
-    {
+    public static class FuncstructorConstant {
         /// <summary>
         /// Root
         /// </summary>

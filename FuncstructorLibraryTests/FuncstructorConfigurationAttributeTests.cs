@@ -6,14 +6,11 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Brimborium.Funcstructors.Tests
-{
+namespace Brimborium.Funcstructors.Tests {
     [TestClass()]
-    public class FuncstructorConfigurationAttributeTests
-    {
+    public class FuncstructorConfigurationAttributeTests {
         [TestMethod()]
-        public void FuncstructorConfigurationAttributeTest()
-        {
+        public void FuncstructorConfigurationAttributeTest() {
             Assert.Fail();
         }
     }

@@ -2,15 +2,13 @@
 // MIT License
 // Copyright (c) 2016 Florian Grimm
 
-namespace Brimborium.Funcstructors
-{
+namespace Brimborium.Funcstructors {
     // http://csharpindepth.com/articles/general/singleton.aspx
 
     /// <summary>
     /// a singleton for another NULL
     /// </summary>
-    public sealed class NullReplacement
-    {
+    public sealed class NullReplacement {
         private static readonly NullReplacement _NULL = new NullReplacement();
 
         // Explicit static constructor to tell C# compiler
@@ -22,10 +20,8 @@ namespace Brimborium.Funcstructors
         /// <summary>
         /// Gets a singleton.
         /// </summary>
-        public static object NULL
-        {
-            get
-            {
+        public static object NULL {
+            get {
                 return _NULL;
             }
         }
@@ -35,8 +31,7 @@ namespace Brimborium.Funcstructors
         /// </summary>
         /// <param name="obj">to test</param>
         /// <returns>true if obj is the same as this (NULL)</returns>
-        public override bool Equals(object obj)
-        {
+        public override bool Equals(object obj) {
             return ReferenceEquals(this, obj);
         }
 
@@ -44,8 +39,7 @@ namespace Brimborium.Funcstructors
         /// returns 0
         /// </summary>
         /// <returns>returns alwasy 0.</returns>
-        public override int GetHashCode()
-        {
+        public override int GetHashCode() {
             // must be null
             return 0;
         }
@@ -54,8 +48,7 @@ namespace Brimborium.Funcstructors
         /// returns  NULL.
         /// </summary>
         /// <returns>NULL</returns>
-        public override string ToString()
-        {
+        public override string ToString() {
             return "NULL";
         }
     }

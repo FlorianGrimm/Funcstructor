@@ -48,25 +48,12 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Contracts\AssemblyInjectionAttribute.cs" />
-    <Compile Include="Implementation\EmbeddedResourceAssemblyLoader.cs" />
-    <Compile Include="Implementation\CacheKey.cs" />
-    <Compile Include="Contracts\FuncstructorConstant.cs" />
-    <Compile Include="Implementation\AssemblyWatcherService.cs" />
-    <Compile Include="Contracts\FuncstructorConfigurationAttribute.cs" />
-    <Compile Include="Contracts\FuncstructorFactoryAttribute.cs" />
-    <Compile Include="Contracts\FuncstructorRegisterAttribute.cs" />
-    <Compile Include="Contracts\IAssemblyWatcherService.cs" />
-    <Compile Include="Contracts\IFuncstructor.cs" />
-    <Compile Include="Contracts\IFuncstructorConfigurable.cs" />
-    <Compile Include="Contracts\IFuncstructorConfiguration.cs" />
-    <Compile Include="Implementation\Funcstructor.cs" />
-    <Compile Include="Implementation\NullReplacement.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="key.snk" />
   </ItemGroup>
+  <Import Project="..\FuncstructorLibrary.Shared\FuncstructorLibrary.Shared.projitems" Label="Shared" />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.

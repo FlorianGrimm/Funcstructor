@@ -1,18 +1,15 @@
-﻿namespace Brimborium.Funcstructors
-{
+﻿namespace Brimborium.Funcstructors {
     using System;
 
     /// <summary>
     /// Register an assembly to load from the embedded resource.
     /// </summary>
     [AttributeUsage(AttributeTargets.Assembly)]
-    public class AssemblyInjectionAttribute : Attribute
-    {
+    public class AssemblyInjectionAttribute : Attribute {
         /// <summary>
         /// Initializes a new instance of the <see cref="AssemblyInjectionAttribute"/> class.
         /// </summary>
-        public AssemblyInjectionAttribute()
-        {
+        public AssemblyInjectionAttribute() {
         }
 
         /// <summary>
@@ -20,8 +17,7 @@
         /// </summary>
         /// <param name="assemblyName">The assembly name</param>
         /// <param name="embeddedResource">The assembly embedded resource name</param>
-        public AssemblyInjectionAttribute(string assemblyName, string embeddedResource)
-        {
+        public AssemblyInjectionAttribute(string assemblyName, string embeddedResource) {
             this.AssemblyName = assemblyName;
             this.EmbeddedResource = embeddedResource;
         }

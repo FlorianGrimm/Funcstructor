@@ -2,21 +2,18 @@
 // MIT License
 // Copyright (c) 2016 Florian Grimm
 
-namespace Brimborium.Funcstructors
-{
+namespace Brimborium.Funcstructors {
     using System;
 
     /// <summary>
     /// Defines a type which implements <see cref="T:IFuncstructorConfiguration"/>
     /// </summary>
     [AttributeUsage(AttributeTargets.Assembly)]
-    public class FuncstructorConfigurationAttribute : Attribute
-    {
+    public class FuncstructorConfigurationAttribute : Attribute {
         /// <summary>
         /// Initializes a new instance of the <see cref="FuncstructorConfigurationAttribute"/> class.
         /// </summary>
-        public FuncstructorConfigurationAttribute()
-        {
+        public FuncstructorConfigurationAttribute() {
         }
 
         /// <summary>
@@ -24,8 +21,7 @@ namespace Brimborium.Funcstructors
         /// which type should be called must be a <see cref="T:IFuncstructorConfiguration"/>.
         /// </summary>
         /// <param name="configurationType">the type registers the factories.</param>
-        public FuncstructorConfigurationAttribute(Type configurationType)
-        {
+        public FuncstructorConfigurationAttribute(Type configurationType) {
             this.ConfigurationType = configurationType;
         }
 
