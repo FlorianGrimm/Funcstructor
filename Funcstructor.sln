@@ -7,12 +7,16 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FuncstructorLibrary", "Func
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FuncstructorLibraryTests", "FuncstructorLibraryTests\FuncstructorLibraryTests.csproj", "{FAB0586F-7575-469D-AD3C-1432B4FA008B}"
 EndProject
-Project("{D954291E-2A0B-460D-934E-DC6B0785DB48}") = "FuncstructorLibrary.Shared", "FuncstructorLibrary.Shared\FuncstructorLibrary.Shared.shproj", "{21B0F7F0-15B2-4EC7-B6E4-66B0C04A961C}"
+Project("{D954291E-2A0B-460D-934E-DC6B0785DB48}") = "FuncstructorLibrary.Implementation.Shared", "FuncstructorLibrary.Implementation.Shared\FuncstructorLibrary.Implementation.Shared.shproj", "{C75605CD-D1FA-453F-839D-84F26C070F63}"
+EndProject
+Project("{D954291E-2A0B-460D-934E-DC6B0785DB48}") = "FuncstructorLibrary.Contracts.Shared", "FuncstructorLibrary.Contracts.Shared\FuncstructorLibrary.Contracts.Shared.shproj", "{24336EA2-C6B4-4C97-B4DE-B9DCB23F544A}"
 EndProject
 Global
 	GlobalSection(SharedMSBuildProjectFiles) = preSolution
-		FuncstructorLibrary.Shared\FuncstructorLibrary.Shared.projitems*{21b0f7f0-15b2-4ec7-b6e4-66b0c04a961c}*SharedItemsImports = 13
-		FuncstructorLibrary.Shared\FuncstructorLibrary.Shared.projitems*{ad902eaf-d947-4792-89a5-4d2050d6cd4f}*SharedItemsImports = 4
+		FuncstructorLibrary.Contracts.Shared\FuncstructorLibrary.Contracts.Shared.projitems*{24336ea2-c6b4-4c97-b4de-b9dcb23f544a}*SharedItemsImports = 13
+		FuncstructorLibrary.Contracts.Shared\FuncstructorLibrary.Contracts.Shared.projitems*{ad902eaf-d947-4792-89a5-4d2050d6cd4f}*SharedItemsImports = 4
+		FuncstructorLibrary.Implementation.Shared\FuncstructorLibrary.Implementation.Shared.projitems*{ad902eaf-d947-4792-89a5-4d2050d6cd4f}*SharedItemsImports = 4
+		FuncstructorLibrary.Implementation.Shared\FuncstructorLibrary.Implementation.Shared.projitems*{c75605cd-d1fa-453f-839d-84f26c070f63}*SharedItemsImports = 13
 	EndGlobalSection
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU

@@ -53,7 +53,8 @@
   <ItemGroup>
     <None Include="key.snk" />
   </ItemGroup>
-  <Import Project="..\FuncstructorLibrary.Shared\FuncstructorLibrary.Shared.projitems" Label="Shared" />
+  <Import Project="..\FuncstructorLibrary.Contracts.Shared\FuncstructorLibrary.Contracts.Shared.projitems" Label="Shared" />
+  <Import Project="..\FuncstructorLibrary.Implementation.Shared\FuncstructorLibrary.Implementation.Shared.projitems" Label="Shared" />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.

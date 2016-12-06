@@ -1,0 +1,22 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <MSBuildAllProjects>$(MSBuildAllProjects);$(MSBuildThisFileFullPath)</MSBuildAllProjects>
+    <HasSharedItems>true</HasSharedItems>
+    <SharedGUID>24336ea2-c6b4-4c97-b4de-b9dcb23f544a</SharedGUID>
+  </PropertyGroup>
+  <PropertyGroup Label="Configuration">
+    <Import_RootNamespace>FuncstructorLibrary.Contracts.Shared</Import_RootNamespace>
+  </PropertyGroup>
+  <ItemGroup>
+    <Compile Include="$(MSBuildThisFileDirectory)AssemblyInjectionAttribute.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)FuncstructorConfigurationAttribute.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)FuncstructorConstant.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)FuncstructorFactoryAttribute.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)FuncstructorRegisterAttribute.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)IAssemblyWatcherService.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)IFuncstructor.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)IFuncstructorConfigurable.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)IFuncstructorConfiguration.cs" />
+  </ItemGroup>
+</Project>

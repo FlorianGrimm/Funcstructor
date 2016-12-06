@@ -1,0 +1,18 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <MSBuildAllProjects>$(MSBuildAllProjects);$(MSBuildThisFileFullPath)</MSBuildAllProjects>
+    <HasSharedItems>true</HasSharedItems>
+    <SharedGUID>c75605cd-d1fa-453f-839d-84f26c070f63</SharedGUID>
+  </PropertyGroup>
+  <PropertyGroup Label="Configuration">
+    <Import_RootNamespace>FuncstructorLibrary.Implementation.Shared</Import_RootNamespace>
+  </PropertyGroup>
+  <ItemGroup>
+    <Compile Include="$(MSBuildThisFileDirectory)AssemblyWatcherService.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)CacheKey.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)EmbeddedResourceAssemblyLoader.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Funcstructor.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)NullReplacement.cs" />
+  </ItemGroup>
+</Project>
